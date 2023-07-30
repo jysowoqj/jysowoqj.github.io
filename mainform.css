@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+/* Korean */
+/* font-family: 'Black Han Sans', sans-serif; */
+
+/* English */
+/* font-family: 'Kanit', sans-serif; */
+
+body{
+    background-color: white;
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+}
+
+/* TOP */
+#title1{
+    outline: none;
+    position: relative;
+    top: -150px;
+    left: 30px;
+    box-sizing: border-box;
+    width: 1000px;
+    font-size: 50px;
+    font-family: 'Kanit', sans-serif;
+    color: #aaa;
+}
+#title2{
+    outline: none;
+    position: relative;
+    top: -258px;
+    left: 143px;
+    box-sizing: border-box;
+    width: 1000px;
+    font-size: 50px;
+    font-family: 'Kanit', sans-serif;
+}
+#icon{
+    position: relative;
+    top: -348px;
+    left: 95px;
+    box-sizing: border-box;
+    width: 40px;
+}
+
+#box{
+    position: relative;
+    top: -20px;
+    left: -15px;
+    width: 1900px;
+    height: 120px;
+    background-color: rgba(211, 211, 211);
+}
+
+#homebt{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+    top: -388px;
+    left: 800px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+#homebt:hover{
+    color: black;
+    transform: scale(1.2);
+}
+#homebt:active {
+    border-color: #aaa;
+    background-color: #aaa;
+    transition: color 0.4s, transform 0.4s;
+}
+
+#discordbt{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+    top: -388px;
+    left: 1250px;
+    border-style: solid;
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+#discordbt:hover{
+    color: black;
+    transform: scale(1.2);
+    transition: color 0.4s, transform 0.4s;
+}
+#discordbt:active {
+    border-color: #aaa;
+    background-color: #aaa;
+    transition: color 0.4s, transform 0.4s;
+}
+
+#rulesbt{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+    top: -388px;
+    left: 900px;
+    border-style: solid;
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+#rulesbt:hover{
+    color: black;
+    transform: scale(1.2);
+    transition: color 0.4s, transform 0.4s;
+}
+#rulesbt:active {
+    border-color: #aaa;
+    background-color: #aaa;
+    transition: color 0.4s, transform 0.4s;
+}
+
+#kakaotalkbt{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+    top: -388px;
+    left: 1175px;
+    border-style: solid;
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+#kakaotalkbt:hover{
+    color: black;
+    transform: scale(1.2);
+    transition: color 0.4s, transform 0.4s;
+}
+#kakaotalkbt:active {
+    border-color: #aaa;
+    background-color: #aaa;
+    transition: color 0.4s, transform 0.4s;
+}
+
+/* Home */
+#home{
+    display: block;
+}
+
+#serveraddresstext{
+    position: relative;
+    top: 10px; left: 810px;
+    font-family: 'Kanit', sans-serif;
+}
+
+#serveraddress{
+    display: block;
+    position: relative;
+    top: -43px; left: 842px;
+    font-family: 'Kanit', sans-serif;
+    background-color: transparent;
+    border-color: transparent;
+    box-sizing: border-box;
+    width: 205px; height: 100px;
+    font-size: 25px;
+    font: bold;
+    transition: transform 0.2s ease-in-out;
+}
+#serveraddress:hover{
+    transform: scale(1.2);
+    transition: transform 0.4s;
+}
+
+#serverversion{
+    font-family: 'Kanit', sans-serif;
+}
+#serverversiontext{
+    font-family: 'Kanit', sans-serif;
+    font-size: 35px;
+}
+
+/* Rules */
+#rules{ 
+    font-family: 'Kanit', sans-serif;
+    display: none;
+}
+#rulestext{
+    font-family: 'Kanit', sans-serif;
+    font-size: 40px;
+    position: relative;
+    top: -300px; left: -5px;
+}
+#warning1{
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 25px;
+    position: relative;
+    top: -480px; left: 0px;
+}
+#warning2{
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 25px;
+    position: relative;
+    top: -508px; left: 140.2px;
+}
+#warning3{
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 25px;
+    position: relative;
+    top: -535px; left: 140.2px;
+}
