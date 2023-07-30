@@ -19,7 +19,8 @@ discordbt.addEventListener("click", function() {
 kakaotalkbt.addEventListener("click", function() {
     const kakaotalk = "https://open.kakao.com/o/gyoRzLHd";
     console.log("Kakaotalk Button Click")
-    window.open(kakaotalk, "_blank");
+    alert("⚠️ 제작중입니다. 양해 부탁드립니다.")
+    // window.open(kakaotalk, "_blank");
 });
 
 serveraddress.addEventListener("click", function() {
