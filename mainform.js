@@ -24,10 +24,21 @@ kakaotalkbt.addEventListener("click", function() {
 });
 
 serveraddress.addEventListener("click", function() {
-    var address = "krmcsv.p-e.kr"
-    navigator.clipboard.writeText(address)
-    console.log("Copy address >> " + address)
-    alert("📑Copy Server Address.")
+    var address = "zepick.kro.kr"
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(address)
+        .then(() => {
+        console.log("Copy address >> " + address);
+        alert("📑서버주소가 복사되었습니다!");
+        })
+        .catch((error) => {
+        console.error("오류 발생:", error);
+        });
+    } else {
+        console.log("해당 브라우저에서 클립보드에 접근할 수 없습니다.");
+        alert("🚫 해당 브라우저에서 클립보드에 접근할 수 없습니다.");
+        alert("🚫 이 주소을 복사해주세요. >> zepick.kro.kr");
+    }
 });
 
 homebt.addEventListener("click", function() {
