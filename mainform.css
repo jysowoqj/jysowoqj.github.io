@@ -11,490 +11,992 @@
 /* Rules Font */
 /* font-family: 'Hahmlet', serif; */
 
-body{
-    background-color:  white;
+/* 모바일 */
+@media (max-width: 768px) {
+    body{
+        background-color:  white;
+    }
+    
+    button {
+        outline: none;
+        cursor: pointer;
+    }
+    
+    /* TOP */
+    #background{
+        position: relative;
+        top: -10px;
+        left: -25px;
+        box-sizing: border-box;
+        max-width: 100%;
+        height: auto;
+        z-index: 1;
+    }
+    
+    #title1{
+        outline: none;
+        position: fixed;
+        color: white;
+        top: -25px;
+        left: 65px;
+        box-sizing: border-box;
+        width: 1000px;
+        font-size: 50px;
+        font-family: 'Kanit', sans-serif;
+        z-index: 2;
+    }
+    #title2{
+        outline: none;
+        position: fixed;
+        color: white;
+        top: -25px;
+        left: 195px;
+        box-sizing: border-box;
+        width: 1000px;
+        font-size: 50px;
+        font-family: 'Kanit', sans-serif;
+        z-index: 2;
+    }
+    #icon{
+        position: fixed;
+        top: 25px;
+        left: 133px;
+        box-sizing: border-box;
+        width: 50px;
+        z-index: 2;
+    }
+    #box{
+        position: fixed;
+        top: -20px;
+        left: -15px;
+        width: 1900px;
+        height: 120px;
+        background-color: rgba(0, 0, 0,.1);
+        z-index: 2;
+        transition: background-color 0.3s ease-in-out;
+    
+    }
+    #homebt{
+        text-decoration: none;
+        font-size: 20px;
+        font-family: 'Kanit', sans-serif;
+        color: white;
+        transition: transform 0.2s ease-in-out;
+        position: fixed;
+        top: 30px;
+        left: 900px;
+        background-color: transparent;
+        border-style: solid;
+        border-color: transparent;
+        border-radius: 10px;
+        box-sizing: border-box;
+        z-index: 3;
+    }
+    #homebt:hover{
+        color: black;
+        transform: scale(1.2);
+        z-index: 3;
+    }
+    #homebt:active {
+        border-color: #aaa;
+        background-color: #aaa;
+        transition: color 0.4s, transform 0.4s;
+        z-index: 3;
+    }
+    
+    #discordbt{
+        text-decoration: none;
+        font-size: 20px;
+        font-family: 'Kanit', sans-serif;
+        color: white;
+        transition: transform 0.2s ease-in-out;
+        position: fixed;
+        top: 30px;
+        left: 1250px;
+        border-style: solid;
+        background-color: transparent;
+        border-color: transparent;
+        border-radius: 10px;
+        box-sizing: border-box;
+        z-index: 3;
+    }
+    #discordbt:hover{
+        color: black;
+        transform: scale(1.2);
+        transition: color 0.4s, transform 0.4s;
+        z-index: 3;
+    }
+    #discordbt:active {
+        border-color: #aaa;
+        background-color: #aaa;
+        transition: color 0.4s, transform 0.4s;
+        z-index: 3;
+    }
+    #rulesbt{
+        text-decoration: none;
+        font-size: 20px;
+        font-family: 'Kanit', sans-serif;
+        color: white;
+        transition: transform 0.2s ease-in-out;
+        position: fixed;
+        top: 30px;
+        left: 1070px;
+        border-style: solid;
+        background-color: transparent;
+        border-color: transparent;
+        border-radius: 10px;
+        box-sizing: border-box;
+        z-index: 3;
+    }
+    #rulesbt:hover{
+        color: black;
+        transform: scale(1.2);
+        transition: color 0.4s, transform 0.4s;
+        z-index: 3;
+    }
+    #rulesbt:active {
+        border-color: #aaa;
+        background-color: #aaa;
+        transition: color 0.4s, transform 0.4s;
+        z-index: 3;
+    }
+    
+    #kakaotalkbt{
+        text-decoration: none;
+        font-size: 20px;
+        font-family: 'Kanit', sans-serif;
+        color: white;
+        transition: transform 0.2s ease-in-out;
+        position: fixed;
+        top: 30px;
+        left: 1440px;
+        border-style: solid;
+        background-color: transparent;
+        border-color: transparent;
+        border-radius: 10px;
+        box-sizing: border-box;
+        z-index: 3;
+    }
+    #kakaotalkbt:hover{
+        color: black;
+        transform: scale(1.2);
+        transition: color 0.4s, transform 0.4s;
+        z-index: 3;
+    }
+    #kakaotalkbt:active {
+        border-color: #aaa;
+        background-color: #aaa;
+        transition: color 0.4s, transform 0.4s;
+        z-index: 3;
+    }
+    
+    /* Home */
+    #home{
+        display: block;
+    }
+    
+    #server{
+        position: relative;
+        top: -800px; left: 710px;
+        font-family: 'Kanit', sans-serif;
+        z-index: 2;
+        color: white;
+        font-size: 50px;
+    }
+    
+    #serveraddresstext{
+        position: relative;
+        top: -265px; left: 1040px;
+        font-family: 'Kanit', sans-serif;
+        z-index: 2;
+        color: white;
+    }
+    
+    #serveraddress{
+        display: block;
+        position: relative;
+        top: -325px; left: 1073px;;
+        font-family: 'Kanit', sans-serif;
+        background-color: transparent;
+        border-color: transparent;
+        box-sizing: border-box;
+        width: 205px; height: 100px;
+        font-size: 25px;
+        font: bold;
+        color: white;
+        transition: transform 0.2s ease-in-out;
+        z-index: 2;
+    }
+    #serveraddress:hover{
+        transform: scale(1.2);
+        transition: transform 0.4s;
+        z-index: 2;
+    }
+    
+    #serverversion{
+        font-family: 'Kanit', sans-serif;
+        position: relative;
+        top: -465px; left: 550px;
+        color: white;
+        z-index: 2;
+    }
+    #serverversiontext{
+        font-family: 'Kanit', sans-serif;
+        position: relative;
+        top: -490px; left: 590px;
+        color: white;
+        font-size: 30px;
+        z-index: 2;
+    }
+    
+    /* Rules */
+    #rules{ 
+        font-family: 'Kanit', sans-serif;
+        display: none;
+        position: relative;
+        top: 340px; left: -5px;
+        z-index: 2;
+    }
+    #h1rulestext{
+        font-family: 'Kanit', sans-serif;
+        position: absolute;
+        color: white;
+        font-size: 60px;
+        top: -850px; left: 763px;
+        z-index: 3;
+    }
+    #h1minerulestext{
+        font-family: 'Kanit', sans-serif;
+        position: absolute;
+        color: green;
+        font-size: 40px;
+        top: -750px; left: 790px;
+        z-index: 3;
+    }
+    #rulestext{
+        font-family: 'Black Han Sans', sans-serif;
+        font-size: 30px;
+        position: relative;
+        top: -230px; left: -5px;
+        z-index: 2;
+    }
+    #RulesLine{
+        position: relative;
+        top: -255px; left: -5px;
+        font-family: 'Black Han Sans', sans-serif;
+        z-index: 2;
+    }
+    #warning1{
+        font-family: 'Black Han Sans', sans-serif;
+        font-size: 25px;
+        position: relative;
+        top: -480px; left: 0px;
+        z-index: 2;
+    }
+    #warning2{
+        font-family: 'Black Han Sans', sans-serif;
+        font-size: 25px;
+        position: relative;
+        top: -505px; left: 140.2px;
+        z-index: 2;
+    }
+    #warning3{
+        font-family: 'Black Han Sans', sans-serif;
+        font-size: 25px;
+        position: relative;
+        top: -531px; left: 140.2px;
+        z-index: 2;
+    }
+    #warning4{
+        font-family: 'Black Han Sans', sans-serif;
+        font-size: 25px;
+        position: relative;
+        top: -557px; left: 140.2px;
+        z-index: 2;
+    }
+    #rule1{
+        font-family: 'Hahmlet', serif;
+        font-size: 24px;
+        position: relative;
+        top: -490px; left: 50px;
+        z-index: 2;
+    }
+    #rule1-1{
+        font-family: 'Hahmlet', serif;
+        font-size: 19px;
+        position: relative;
+        top: -510px; left: 70px;
+        z-index: 2;
+    }
+    #rule1-2{
+        font-family: 'Hahmlet', serif;
+        font-size: 19px;
+        position: relative;
+        top: -530px; left: 90px;
+        z-index: 2;
+    }
+    #rule2{
+        font-family: 'Hahmlet', serif;
+        font-size: 24px;
+        position: relative;
+        top: -550px; left: 51px;
+        z-index: 2;
+    }
+    #rule2-1{
+        font-family: 'Hahmlet', serif;
+        font-size: 19px;
+        position: relative;
+        top: -575px; left: 70px;
+        z-index: 2;
+    }
+    #rule2-2{
+        font-family: 'Hahmlet', serif;
+        font-size: 19px;
+        position: relative;
+        top: -595px; left: 90px;
+        z-index: 2;
+    }
+    #rule3{
+        font-family: 'Hahmlet', serif;
+        font-size: 24px;
+        position: relative;
+        top: -613px; left: 50px;
+        z-index: 2;
+    }
+    #rule3-1{
+        font-family: 'Hahmlet', serif;
+        font-size: 19px;
+        position: relative;
+        top: -637px; left: 72px;
+        z-index: 2;
+    }
+    #rule3-2{
+        font-family: 'Hahmlet', serif;
+        font-size: 19px;
+        position: relative;
+        top: -657px; left: 90px;
+        z-index: 2;
+    }
+    #rule4{
+        font-family: 'Hahmlet', serif;
+        font-size: 24px;
+        position: relative;
+        top: -675px; left: 52px;
+        z-index: 2;
+    }
+    #rule5{
+        font-family: 'Hahmlet', serif;
+        font-size: 24px;
+        position: relative;
+        top: -685px; left: 52px;
+        z-index: 2;
+    }
+    #rule5-1{
+        font-family: 'Hahmlet', serif;
+        font-size: 19px;
+        position: relative;
+        top: -705px; left: 71px;
+        z-index: 2;
+    }
+    #rule6{
+        font-family: 'Hahmlet', serif;
+        font-size: 24px;
+        position: relative;
+        top: -720px; left: 52px;
+        z-index: 2;
+    }
+    #rule6-1{
+        font-family: 'Hahmlet', serif;
+        font-size: 19px;
+        position: relative;
+        top: -745px; left: 71px;
+        z-index: 2;
+    }
+    #rule6-2{
+        font-family: 'Hahmlet', serif;
+        font-size: 19px;
+        position: relative;
+        top: -763px; left: 98px;
+        z-index: 2;
+    }
+    #rule7{
+        font-family: 'Hahmlet', serif;
+        font-size: 24px;
+        position: relative;
+        top: -775px; left: 53px;
+        z-index: 2;
+    }
+    #rule7-1{
+        font-family: 'Hahmlet', serif;
+        font-size: 19px;
+        position: relative;
+        top: -800px; left: 71px;
+        z-index: 2;
+    }
+    #rule8{
+        font-family: 'Hahmlet', serif;
+        font-size: 24px;
+        position: relative;
+        top: -810px; left: 54px;
+        z-index: 2;
+    }
+    #rule8-1{
+        font-family: 'Hahmlet', serif;
+        font-size: 19px;
+        position: relative;
+        top: -835px; left: 73px;
+        z-index: 2;
+    }
+    #rule9{
+        font-family: 'Hahmlet', serif;
+        font-size: 24px;
+        position: relative;
+        top: -843px; left: 55px;
+        z-index: 2;
+    }
+    #rule9-1{
+        font-family: 'Hahmlet', serif;
+        font-size: 19px;
+        position: relative;
+        top: -867px; left: 74px;
+        z-index: 2;
+    }
+    #rule10{
+        font-family: 'Hahmlet', serif;
+        font-size: 24px;
+        position: relative;
+        top: -872px; left: 56px;
+        z-index: 2;
+    }
+    #rule10-1{
+        font-family: 'Hahmlet', serif;
+        font-size: 19px;
+        position: relative;
+        top: -894px; left: 74px;
+        z-index: 2;
+    }
+    #rule10-2{
+        font-family: 'Hahmlet', serif;
+        font-size: 19px;
+        position: relative;
+        top: -910px; left: 104px;
+        z-index: 2;
+    }
+    #rule11{
+        font-family: 'Hahmlet', serif;
+        font-size: 24px;
+        position: relative;
+        top: -920px; left: 60px;
+        z-index: 2;
+    }
+    #rule11-1{
+        font-family: 'Hahmlet', serif;
+        font-size: 19px;
+        position: relative;
+        top: -945px; left: 76px;
+        z-index: 2;
+    }
+    #rule11-2{
+        font-family: 'Hahmlet', serif;
+        font-size: 19px;
+        position: relative;
+        top: -960px; left: 104px;
+        z-index: 2;
+    }
 }
-
-button {
-    outline: none;
-    cursor: pointer;
+  
+/* 태블릿 */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* 스타일 코드 작성 */
 }
-
-/* TOP */
-#background{
-    position: relative;
-    top: -10px;
-    left: -25px;
-    z-index: 1;
-}
-
-#title1{
-    outline: none;
-    position: fixed;
-    color: white;
-    top: -25px;
-    left: 65px;
-    box-sizing: border-box;
-    width: 1000px;
-    font-size: 50px;
-    font-family: 'Kanit', sans-serif;
-    z-index: 2;
-}
-#title2{
-    outline: none;
-    position: fixed;
-    color: white;
-    top: -25px;
-    left: 195px;
-    box-sizing: border-box;
-    width: 1000px;
-    font-size: 50px;
-    font-family: 'Kanit', sans-serif;
-    z-index: 2;
-}
-#icon{
-    position: fixed;
-    top: 25px;
-    left: 133px;
-    box-sizing: border-box;
-    width: 50px;
-    z-index: 2;
-}
-#box{
-    position: fixed;
-    top: -20px;
-    left: -15px;
-    width: 1900px;
-    height: 120px;
-    background-color: rgba(0, 0, 0,.1);
-    z-index: 2;
-    transition: background-color 0.3s ease-in-out;
-
-}
-#homebt{
-    text-decoration: none;
-    font-size: 20px;
-    font-family: 'Kanit', sans-serif;
-    color: white;
-    transition: transform 0.2s ease-in-out;
-    position: fixed;
-    top: 30px;
-    left: 900px;
-    background-color: transparent;
-    border-style: solid;
-    border-color: transparent;
-    border-radius: 10px;
-    box-sizing: border-box;
-    z-index: 3;
-}
-#homebt:hover{
-    color: black;
-    transform: scale(1.2);
-    z-index: 3;
-}
-#homebt:active {
-    border-color: #aaa;
-    background-color: #aaa;
-    transition: color 0.4s, transform 0.4s;
-    z-index: 3;
-}
-
-#discordbt{
-    text-decoration: none;
-    font-size: 20px;
-    font-family: 'Kanit', sans-serif;
-    color: white;
-    transition: transform 0.2s ease-in-out;
-    position: fixed;
-    top: 30px;
-    left: 1250px;
-    border-style: solid;
-    background-color: transparent;
-    border-color: transparent;
-    border-radius: 10px;
-    box-sizing: border-box;
-    z-index: 3;
-}
-#discordbt:hover{
-    color: black;
-    transform: scale(1.2);
-    transition: color 0.4s, transform 0.4s;
-    z-index: 3;
-}
-#discordbt:active {
-    border-color: #aaa;
-    background-color: #aaa;
-    transition: color 0.4s, transform 0.4s;
-    z-index: 3;
-}
-#rulesbt{
-    text-decoration: none;
-    font-size: 20px;
-    font-family: 'Kanit', sans-serif;
-    color: white;
-    transition: transform 0.2s ease-in-out;
-    position: fixed;
-    top: 30px;
-    left: 1070px;
-    border-style: solid;
-    background-color: transparent;
-    border-color: transparent;
-    border-radius: 10px;
-    box-sizing: border-box;
-    z-index: 3;
-}
-#rulesbt:hover{
-    color: black;
-    transform: scale(1.2);
-    transition: color 0.4s, transform 0.4s;
-    z-index: 3;
-}
-#rulesbt:active {
-    border-color: #aaa;
-    background-color: #aaa;
-    transition: color 0.4s, transform 0.4s;
-    z-index: 3;
-}
-
-#kakaotalkbt{
-    text-decoration: none;
-    font-size: 20px;
-    font-family: 'Kanit', sans-serif;
-    color: white;
-    transition: transform 0.2s ease-in-out;
-    position: fixed;
-    top: 30px;
-    left: 1440px;
-    border-style: solid;
-    background-color: transparent;
-    border-color: transparent;
-    border-radius: 10px;
-    box-sizing: border-box;
-    z-index: 3;
-}
-#kakaotalkbt:hover{
-    color: black;
-    transform: scale(1.2);
-    transition: color 0.4s, transform 0.4s;
-    z-index: 3;
-}
-#kakaotalkbt:active {
-    border-color: #aaa;
-    background-color: #aaa;
-    transition: color 0.4s, transform 0.4s;
-    z-index: 3;
-}
-
-/* Home */
-#home{
-    display: block;
-}
-
-#server{
-    position: relative;
-    top: -800px; left: 710px;
-    font-family: 'Kanit', sans-serif;
-    z-index: 2;
-    color: white;
-    font-size: 50px;
-}
-
-#serveraddresstext{
-    position: relative;
-    top: -265px; left: 1040px;
-    font-family: 'Kanit', sans-serif;
-    z-index: 2;
-    color: white;
-}
-
-#serveraddress{
-    display: block;
-    position: relative;
-    top: -325px; left: 1073px;;
-    font-family: 'Kanit', sans-serif;
-    background-color: transparent;
-    border-color: transparent;
-    box-sizing: border-box;
-    width: 205px; height: 100px;
-    font-size: 25px;
-    font: bold;
-    color: white;
-    transition: transform 0.2s ease-in-out;
-    z-index: 2;
-}
-#serveraddress:hover{
-    transform: scale(1.2);
-    transition: transform 0.4s;
-    z-index: 2;
-}
-
-#serverversion{
-    font-family: 'Kanit', sans-serif;
-    position: relative;
-    top: -465px; left: 550px;
-    color: white;
-    z-index: 2;
-}
-#serverversiontext{
-    font-family: 'Kanit', sans-serif;
-    position: relative;
-    top: -490px; left: 590px;
-    color: white;
-    font-size: 30px;
-    z-index: 2;
-}
-
-/* Rules */
-#rules{ 
-    font-family: 'Kanit', sans-serif;
-    display: none;
-    position: relative;
-    top: 340px; left: -5px;
-    z-index: 2;
-}
-#h1rulestext{
-    font-family: 'Kanit', sans-serif;
-    position: absolute;
-    color: white;
-    font-size: 60px;
-    top: -850px; left: 763px;
-    z-index: 3;
-}
-#h1minerulestext{
-    font-family: 'Kanit', sans-serif;
-    position: absolute;
-    color: green;
-    font-size: 40px;
-    top: -750px; left: 790px;
-    z-index: 3;
-}
-#rulestext{
-    font-family: 'Black Han Sans', sans-serif;
-    font-size: 30px;
-    position: relative;
-    top: -230px; left: -5px;
-    z-index: 2;
-}
-#RulesLine{
-    position: relative;
-    top: -255px; left: -5px;
-    font-family: 'Black Han Sans', sans-serif;
-    z-index: 2;
-}
-#warning1{
-    font-family: 'Black Han Sans', sans-serif;
-    font-size: 25px;
-    position: relative;
-    top: -480px; left: 0px;
-    z-index: 2;
-}
-#warning2{
-    font-family: 'Black Han Sans', sans-serif;
-    font-size: 25px;
-    position: relative;
-    top: -505px; left: 140.2px;
-    z-index: 2;
-}
-#warning3{
-    font-family: 'Black Han Sans', sans-serif;
-    font-size: 25px;
-    position: relative;
-    top: -531px; left: 140.2px;
-    z-index: 2;
-}
-#warning4{
-    font-family: 'Black Han Sans', sans-serif;
-    font-size: 25px;
-    position: relative;
-    top: -557px; left: 140.2px;
-    z-index: 2;
-}
-#rule1{
-    font-family: 'Hahmlet', serif;
-    font-size: 24px;
-    position: relative;
-    top: -490px; left: 50px;
-    z-index: 2;
-}
-#rule1-1{
-    font-family: 'Hahmlet', serif;
-    font-size: 19px;
-    position: relative;
-    top: -510px; left: 70px;
-    z-index: 2;
-}
-#rule1-2{
-    font-family: 'Hahmlet', serif;
-    font-size: 19px;
-    position: relative;
-    top: -530px; left: 90px;
-    z-index: 2;
-}
-#rule2{
-    font-family: 'Hahmlet', serif;
-    font-size: 24px;
-    position: relative;
-    top: -550px; left: 51px;
-    z-index: 2;
-}
-#rule2-1{
-    font-family: 'Hahmlet', serif;
-    font-size: 19px;
-    position: relative;
-    top: -575px; left: 70px;
-    z-index: 2;
-}
-#rule2-2{
-    font-family: 'Hahmlet', serif;
-    font-size: 19px;
-    position: relative;
-    top: -595px; left: 90px;
-    z-index: 2;
-}
-#rule3{
-    font-family: 'Hahmlet', serif;
-    font-size: 24px;
-    position: relative;
-    top: -613px; left: 50px;
-    z-index: 2;
-}
-#rule3-1{
-    font-family: 'Hahmlet', serif;
-    font-size: 19px;
-    position: relative;
-    top: -637px; left: 72px;
-    z-index: 2;
-}
-#rule3-2{
-    font-family: 'Hahmlet', serif;
-    font-size: 19px;
-    position: relative;
-    top: -657px; left: 90px;
-    z-index: 2;
-}
-#rule4{
-    font-family: 'Hahmlet', serif;
-    font-size: 24px;
-    position: relative;
-    top: -675px; left: 52px;
-    z-index: 2;
-}
-#rule5{
-    font-family: 'Hahmlet', serif;
-    font-size: 24px;
-    position: relative;
-    top: -685px; left: 52px;
-    z-index: 2;
-}
-#rule5-1{
-    font-family: 'Hahmlet', serif;
-    font-size: 19px;
-    position: relative;
-    top: -705px; left: 71px;
-    z-index: 2;
-}
-#rule6{
-    font-family: 'Hahmlet', serif;
-    font-size: 24px;
-    position: relative;
-    top: -720px; left: 52px;
-    z-index: 2;
-}
-#rule6-1{
-    font-family: 'Hahmlet', serif;
-    font-size: 19px;
-    position: relative;
-    top: -745px; left: 71px;
-    z-index: 2;
-}
-#rule6-2{
-    font-family: 'Hahmlet', serif;
-    font-size: 19px;
-    position: relative;
-    top: -763px; left: 98px;
-    z-index: 2;
-}
-#rule7{
-    font-family: 'Hahmlet', serif;
-    font-size: 24px;
-    position: relative;
-    top: -775px; left: 53px;
-    z-index: 2;
-}
-#rule7-1{
-    font-family: 'Hahmlet', serif;
-    font-size: 19px;
-    position: relative;
-    top: -800px; left: 71px;
-    z-index: 2;
-}
-#rule8{
-    font-family: 'Hahmlet', serif;
-    font-size: 24px;
-    position: relative;
-    top: -810px; left: 54px;
-    z-index: 2;
-}
-#rule8-1{
-    font-family: 'Hahmlet', serif;
-    font-size: 19px;
-    position: relative;
-    top: -835px; left: 73px;
-    z-index: 2;
-}
-#rule9{
-    font-family: 'Hahmlet', serif;
-    font-size: 24px;
-    position: relative;
-    top: -843px; left: 55px;
-    z-index: 2;
-}
-#rule9-1{
-    font-family: 'Hahmlet', serif;
-    font-size: 19px;
-    position: relative;
-    top: -867px; left: 74px;
-    z-index: 2;
-}
-#rule10{
-    font-family: 'Hahmlet', serif;
-    font-size: 24px;
-    position: relative;
-    top: -872px; left: 56px;
-    z-index: 2;
-}
-#rule10-1{
-    font-family: 'Hahmlet', serif;
-    font-size: 19px;
-    position: relative;
-    top: -894px; left: 74px;
-    z-index: 2;
-}
-#rule10-2{
-    font-family: 'Hahmlet', serif;
-    font-size: 19px;
-    position: relative;
-    top: -910px; left: 104px;
-    z-index: 2;
-}
-#rule11{
-    font-family: 'Hahmlet', serif;
-    font-size: 24px;
-    position: relative;
-    top: -920px; left: 60px;
-    z-index: 2;
-}
-#rule11-1{
-    font-family: 'Hahmlet', serif;
-    font-size: 19px;
-    position: relative;
-    top: -945px; left: 76px;
-    z-index: 2;
-}
-#rule11-2{
-    font-family: 'Hahmlet', serif;
-    font-size: 19px;
-    position: relative;
-    top: -960px; left: 104px;
-    z-index: 2;
+  
+/* 데스크탑 */
+@media (min-width: 1025px) {
+    body{
+        background-color:  white;
+    }
+    
+    button {
+        outline: none;
+        cursor: pointer;
+    }
+    
+    /* TOP */
+    #background{
+        position: relative;
+        top: -10px;
+        left: -25px;
+        z-index: 1;
+    }
+    
+    #title1{
+        outline: none;
+        position: fixed;
+        color: white;
+        top: -25px;
+        left: 65px;
+        box-sizing: border-box;
+        width: 1000px;
+        font-size: 50px;
+        font-family: 'Kanit', sans-serif;
+        z-index: 2;
+    }
+    #title2{
+        outline: none;
+        position: fixed;
+        color: white;
+        top: -25px;
+        left: 195px;
+        box-sizing: border-box;
+        width: 1000px;
+        font-size: 50px;
+        font-family: 'Kanit', sans-serif;
+        z-index: 2;
+    }
+    #icon{
+        position: fixed;
+        top: 25px;
+        left: 133px;
+        box-sizing: border-box;
+        width: 50px;
+        z-index: 2;
+    }
+    #box{
+        position: fixed;
+        top: -20px;
+        left: -15px;
+        width: 1900px;
+        height: 120px;
+        background-color: rgba(0, 0, 0,.1);
+        z-index: 2;
+        transition: background-color 0.3s ease-in-out;
+    
+    }
+    #homebt{
+        text-decoration: none;
+        font-size: 20px;
+        font-family: 'Kanit', sans-serif;
+        color: white;
+        transition: transform 0.2s ease-in-out;
+        position: fixed;
+        top: 30px;
+        left: 900px;
+        background-color: transparent;
+        border-style: solid;
+        border-color: transparent;
+        border-radius: 10px;
+        box-sizing: border-box;
+        z-index: 3;
+    }
+    #homebt:hover{
+        color: black;
+        transform: scale(1.2);
+        z-index: 3;
+    }
+    #homebt:active {
+        border-color: #aaa;
+        background-color: #aaa;
+        transition: color 0.4s, transform 0.4s;
+        z-index: 3;
+    }
+    
+    #discordbt{
+        text-decoration: none;
+        font-size: 20px;
+        font-family: 'Kanit', sans-serif;
+        color: white;
+        transition: transform 0.2s ease-in-out;
+        position: fixed;
+        top: 30px;
+        left: 1250px;
+        border-style: solid;
+        background-color: transparent;
+        border-color: transparent;
+        border-radius: 10px;
+        box-sizing: border-box;
+        z-index: 3;
+    }
+    #discordbt:hover{
+        color: black;
+        transform: scale(1.2);
+        transition: color 0.4s, transform 0.4s;
+        z-index: 3;
+    }
+    #discordbt:active {
+        border-color: #aaa;
+        background-color: #aaa;
+        transition: color 0.4s, transform 0.4s;
+        z-index: 3;
+    }
+    #rulesbt{
+        text-decoration: none;
+        font-size: 20px;
+        font-family: 'Kanit', sans-serif;
+        color: white;
+        transition: transform 0.2s ease-in-out;
+        position: fixed;
+        top: 30px;
+        left: 1070px;
+        border-style: solid;
+        background-color: transparent;
+        border-color: transparent;
+        border-radius: 10px;
+        box-sizing: border-box;
+        z-index: 3;
+    }
+    #rulesbt:hover{
+        color: black;
+        transform: scale(1.2);
+        transition: color 0.4s, transform 0.4s;
+        z-index: 3;
+    }
+    #rulesbt:active {
+        border-color: #aaa;
+        background-color: #aaa;
+        transition: color 0.4s, transform 0.4s;
+        z-index: 3;
+    }
+    
+    #kakaotalkbt{
+        text-decoration: none;
+        font-size: 20px;
+        font-family: 'Kanit', sans-serif;
+        color: white;
+        transition: transform 0.2s ease-in-out;
+        position: fixed;
+        top: 30px;
+        left: 1440px;
+        border-style: solid;
+        background-color: transparent;
+        border-color: transparent;
+        border-radius: 10px;
+        box-sizing: border-box;
+        z-index: 3;
+    }
+    #kakaotalkbt:hover{
+        color: black;
+        transform: scale(1.2);
+        transition: color 0.4s, transform 0.4s;
+        z-index: 3;
+    }
+    #kakaotalkbt:active {
+        border-color: #aaa;
+        background-color: #aaa;
+        transition: color 0.4s, transform 0.4s;
+        z-index: 3;
+    }
+    
+    /* Home */
+    #home{
+        display: block;
+    }
+    
+    #server{
+        position: relative;
+        top: -800px; left: 710px;
+        font-family: 'Kanit', sans-serif;
+        z-index: 2;
+        color: white;
+        font-size: 50px;
+    }
+    
+    #serveraddresstext{
+        position: relative;
+        top: -265px; left: 1040px;
+        font-family: 'Kanit', sans-serif;
+        z-index: 2;
+        color: white;
+    }
+    
+    #serveraddress{
+        display: block;
+        position: relative;
+        top: -325px; left: 1073px;;
+        font-family: 'Kanit', sans-serif;
+        background-color: transparent;
+        border-color: transparent;
+        box-sizing: border-box;
+        width: 205px; height: 100px;
+        font-size: 25px;
+        font: bold;
+        color: white;
+        transition: transform 0.2s ease-in-out;
+        z-index: 2;
+    }
+    #serveraddress:hover{
+        transform: scale(1.2);
+        transition: transform 0.4s;
+        z-index: 2;
+    }
+    
+    #serverversion{
+        font-family: 'Kanit', sans-serif;
+        position: relative;
+        top: -465px; left: 550px;
+        color: white;
+        z-index: 2;
+    }
+    #serverversiontext{
+        font-family: 'Kanit', sans-serif;
+        position: relative;
+        top: -490px; left: 590px;
+        color: white;
+        font-size: 30px;
+        z-index: 2;
+    }
+    
+    /* Rules */
+    #rules{ 
+        font-family: 'Kanit', sans-serif;
+        display: none;
+        position: relative;
+        top: 340px; left: -5px;
+        z-index: 2;
+    }
+    #h1rulestext{
+        font-family: 'Kanit', sans-serif;
+        position: absolute;
+        color: white;
+        font-size: 60px;
+        top: -850px; left: 763px;
+        z-index: 3;
+    }
+    #h1minerulestext{
+        font-family: 'Kanit', sans-serif;
+        position: absolute;
+        color: green;
+        font-size: 40px;
+        top: -750px; left: 790px;
+        z-index: 3;
+    }
+    #rulestext{
+        font-family: 'Black Han Sans', sans-serif;
+        font-size: 30px;
+        position: relative;
+        top: -230px; left: -5px;
+        z-index: 2;
+    }
+    #RulesLine{
+        position: relative;
+        top: -255px; left: -5px;
+        font-family: 'Black Han Sans', sans-serif;
+        z-index: 2;
+    }
+    #warning1{
+        font-family: 'Black Han Sans', sans-serif;
+        font-size: 25px;
+        position: relative;
+        top: -480px; left: 0px;
+        z-index: 2;
+    }
+    #warning2{
+        font-family: 'Black Han Sans', sans-serif;
+        font-size: 25px;
+        position: relative;
+        top: -505px; left: 140.2px;
+        z-index: 2;
+    }
+    #warning3{
+        font-family: 'Black Han Sans', sans-serif;
+        font-size: 25px;
+        position: relative;
+        top: -531px; left: 140.2px;
+        z-index: 2;
+    }
+    #warning4{
+        font-family: 'Black Han Sans', sans-serif;
+        font-size: 25px;
+        position: relative;
+        top: -557px; left: 140.2px;
+        z-index: 2;
+    }
+    #rule1{
+        font-family: 'Hahmlet', serif;
+        font-size: 24px;
+        position: relative;
+        top: -490px; left: 50px;
+        z-index: 2;
+    }
+    #rule1-1{
+        font-family: 'Hahmlet', serif;
+        font-size: 19px;
+        position: relative;
+        top: -510px; left: 70px;
+        z-index: 2;
+    }
+    #rule1-2{
+        font-family: 'Hahmlet', serif;
+        font-size: 19px;
+        position: relative;
+        top: -530px; left: 90px;
+        z-index: 2;
+    }
+    #rule2{
+        font-family: 'Hahmlet', serif;
+        font-size: 24px;
+        position: relative;
+        top: -550px; left: 51px;
+        z-index: 2;
+    }
+    #rule2-1{
+        font-family: 'Hahmlet', serif;
+        font-size: 19px;
+        position: relative;
+        top: -575px; left: 70px;
+        z-index: 2;
+    }
+    #rule2-2{
+        font-family: 'Hahmlet', serif;
+        font-size: 19px;
+        position: relative;
+        top: -595px; left: 90px;
+        z-index: 2;
+    }
+    #rule3{
+        font-family: 'Hahmlet', serif;
+        font-size: 24px;
+        position: relative;
+        top: -613px; left: 50px;
+        z-index: 2;
+    }
+    #rule3-1{
+        font-family: 'Hahmlet', serif;
+        font-size: 19px;
+        position: relative;
+        top: -637px; left: 72px;
+        z-index: 2;
+    }
+    #rule3-2{
+        font-family: 'Hahmlet', serif;
+        font-size: 19px;
+        position: relative;
+        top: -657px; left: 90px;
+        z-index: 2;
+    }
+    #rule4{
+        font-family: 'Hahmlet', serif;
+        font-size: 24px;
+        position: relative;
+        top: -675px; left: 52px;
+        z-index: 2;
+    }
+    #rule5{
+        font-family: 'Hahmlet', serif;
+        font-size: 24px;
+        position: relative;
+        top: -685px; left: 52px;
+        z-index: 2;
+    }
+    #rule5-1{
+        font-family: 'Hahmlet', serif;
+        font-size: 19px;
+        position: relative;
+        top: -705px; left: 71px;
+        z-index: 2;
+    }
+    #rule6{
+        font-family: 'Hahmlet', serif;
+        font-size: 24px;
+        position: relative;
+        top: -720px; left: 52px;
+        z-index: 2;
+    }
+    #rule6-1{
+        font-family: 'Hahmlet', serif;
+        font-size: 19px;
+        position: relative;
+        top: -745px; left: 71px;
+        z-index: 2;
+    }
+    #rule6-2{
+        font-family: 'Hahmlet', serif;
+        font-size: 19px;
+        position: relative;
+        top: -763px; left: 98px;
+        z-index: 2;
+    }
+    #rule7{
+        font-family: 'Hahmlet', serif;
+        font-size: 24px;
+        position: relative;
+        top: -775px; left: 53px;
+        z-index: 2;
+    }
+    #rule7-1{
+        font-family: 'Hahmlet', serif;
+        font-size: 19px;
+        position: relative;
+        top: -800px; left: 71px;
+        z-index: 2;
+    }
+    #rule8{
+        font-family: 'Hahmlet', serif;
+        font-size: 24px;
+        position: relative;
+        top: -810px; left: 54px;
+        z-index: 2;
+    }
+    #rule8-1{
+        font-family: 'Hahmlet', serif;
+        font-size: 19px;
+        position: relative;
+        top: -835px; left: 73px;
+        z-index: 2;
+    }
+    #rule9{
+        font-family: 'Hahmlet', serif;
+        font-size: 24px;
+        position: relative;
+        top: -843px; left: 55px;
+        z-index: 2;
+    }
+    #rule9-1{
+        font-family: 'Hahmlet', serif;
+        font-size: 19px;
+        position: relative;
+        top: -867px; left: 74px;
+        z-index: 2;
+    }
+    #rule10{
+        font-family: 'Hahmlet', serif;
+        font-size: 24px;
+        position: relative;
+        top: -872px; left: 56px;
+        z-index: 2;
+    }
+    #rule10-1{
+        font-family: 'Hahmlet', serif;
+        font-size: 19px;
+        position: relative;
+        top: -894px; left: 74px;
+        z-index: 2;
+    }
+    #rule10-2{
+        font-family: 'Hahmlet', serif;
+        font-size: 19px;
+        position: relative;
+        top: -910px; left: 104px;
+        z-index: 2;
+    }
+    #rule11{
+        font-family: 'Hahmlet', serif;
+        font-size: 24px;
+        position: relative;
+        top: -920px; left: 60px;
+        z-index: 2;
+    }
+    #rule11-1{
+        font-family: 'Hahmlet', serif;
+        font-size: 19px;
+        position: relative;
+        top: -945px; left: 76px;
+        z-index: 2;
+    }
+    #rule11-2{
+        font-family: 'Hahmlet', serif;
+        font-size: 19px;
+        position: relative;
+        top: -960px; left: 104px;
+        z-index: 2;
+    }
 }
