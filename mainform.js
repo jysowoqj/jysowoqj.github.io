@@ -21,6 +21,7 @@ window.addEventListener('scroll', function() {
         boxElement.style.backgroundColor = 'rgba(0, 0, 0, 0.1)';
     }
 });
+
 // DISCORD BUTTON
 discordbt.addEventListener("click", function() {
     const discord = "https://discord.gg/cwdWsDbere";
@@ -30,10 +31,9 @@ discordbt.addEventListener("click", function() {
 
 // KAKAOTALK BUTTON
 kakaotalkbt.addEventListener("click", function() {
-    const kakaotalk = "https://open.kakao.com/o/gyoRzLHd";
+    const kakaotalk = "https://open.kakao.com/o/gC2pyXNf";
     console.log("Kakaotalk Button Click")
-    alert("⚠️ 제작중입니다. 양해 부탁드립니다.")
-    // window.open(kakaotalk, "_blank");
+    window.open(kakaotalk, "_blank")
 });
 
 // Server Address Copy BUTTON
