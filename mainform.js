@@ -11,7 +11,6 @@ const homebt = document.getElementById("homebt")
 const serveraddress = document.getElementById("serveraddress");
 const boxElement = document.getElementById('box');
 
-// 상단바 설정
 window.addEventListener('scroll', function() {
     const scrollY = window.scrollY || document.documentElement.scrollTop;
     const boxElement = document.getElementById('box');
@@ -39,7 +38,7 @@ kakaotalkbt.addEventListener("click", function() {
 
 // Server Address Copy BUTTON
 serveraddress.addEventListener("click", function() {
-    var address = "zepick.kro.kr" // 복사될 서버 주소
+    var address = "zepick.kro.kr"
     if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(address)
         .then(() => {
@@ -49,7 +48,7 @@ serveraddress.addEventListener("click", function() {
         .catch((error) => {
         console.error("오류 발생:", error);
         });
-    } else { // 브라우저에서 클립보드에 엑세스 할 수 없을때
+    } else {
         console.log("해당 웹브라우저에서 클립보드에 접근할 수 없습니다.");
         alert("🚫 해당 웹브라우저에서 클립보드에 접근할 수 없습니다.");
         alert("🚫 이 주소을 복사해주세요. >> zepick.kro.kr");
