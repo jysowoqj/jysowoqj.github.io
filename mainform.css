@@ -36,7 +36,7 @@
     #title1{
         outline: none;
         position: fixed;
-        color: white;
+        color: white; 
         top: -1.3%;
         left: 3.5%;
         box-sizing: border-box;
@@ -513,7 +513,11 @@
 /* 데스크탑 */
 @media screen and (min-width: 1025px) {
     body{
-        background-color:  white;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        height: 100vh;
+        margin: 0;
     }
     
     button {
