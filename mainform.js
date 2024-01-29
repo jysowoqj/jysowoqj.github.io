@@ -38,7 +38,7 @@ kakaotalkbt.addEventListener("click", function() {
 
 // Server Address Copy BUTTON
 serveraddress.addEventListener("click", function() {
-    var address = "zepick.kro.kr"
+    var address = "zepick.kro.kr" // 서버 주소
     if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(address)
         .then(() => {
@@ -52,7 +52,7 @@ serveraddress.addEventListener("click", function() {
         console.log("해당 웹브라우저에서 클립보드에 접근할 수 없습니다.");
         alert("🚫 해당 웹브라우저에서 클립보드에 접근할 수 없습니다.");
         alert("🚫 이 주소을 복사해주세요.");
-        alert("서버 주소 : zepick.kro.kr") // 추후 서버 주소 바뀌면 바꿔야함
+        alert("서버 주소 : ", address) // 추후 서버 주소 바뀌면 바꿔야함
     }
 });
 
