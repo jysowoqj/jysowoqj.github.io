@@ -11,6 +11,11 @@ const homebt = document.getElementById("homebt")
 const serveraddress = document.getElementById("serveraddress");
 const boxElement = document.getElementById('box');
 
+
+window.onload = function () {
+        window.scrollTo(125, 0);
+};
+
 window.addEventListener('scroll', function() {
     const scrollY = window.scrollY || document.documentElement.scrollTop;
     const boxElement = document.getElementById('box');

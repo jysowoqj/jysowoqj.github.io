@@ -513,18 +513,19 @@
 /* 데스크탑 */
 @media screen and (min-width: 1025px) {
     body{
+        margin: 0;
+        padding: 0;
         display: flex;
         flex-direction: column;
         align-items: stretch;
         height: 100vh;
-        margin: 0;
     }
-    
+
     button {
         outline: none;
         cursor: pointer;
     }
-    
+
     /* TOP */
     #background{
         position: relative;
