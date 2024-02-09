@@ -11,7 +11,7 @@ const homebt = document.getElementById("homebt")
 const serveraddress = document.getElementById("serveraddress");
 const boxElement = document.getElementById('box');
 
-
+// 가로 스크롤 조정
 window.onload = function () {
         window.scrollTo(125, 0);
 };
