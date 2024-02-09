@@ -16,6 +16,7 @@ window.onload = function () {
         window.scrollTo(125, 0);
 };
 
+// TOP BOX 상단 바 색깔 조정
 window.addEventListener('scroll', function() {
     const scrollY = window.scrollY || document.documentElement.scrollTop;
     const boxElement = document.getElementById('box');
