@@ -1,6 +1,6 @@
 // 디렉토리
-const home = document.getElementById("home");
-const rules = document.getElementById("rules")
+const home = document.getElementById("home-page");
+const rules = document.getElementById("rules-page")
 
 // 버튼
 const discordbt = document.getElementById("discordbt");
