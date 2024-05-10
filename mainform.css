@@ -187,7 +187,7 @@
     }
     
     /* Home */
-    #home{
+    #home-page{
         display: block;
     }
     
@@ -256,7 +256,7 @@
     }
     
     /* Rules */
-    #rules{ 
+    #rules-page{ 
         font-family: 'Kanit', sans-serif;
         display: none;
         position: relative;
@@ -692,7 +692,7 @@
     }
     
     /* Home */
-    #home{
+    #home-page{
         display: block;
     }
     
@@ -759,7 +759,7 @@
     }
     
     /* Rules */
-    #rules{ 
+    #rules-page{ 
         font-family: 'Kanit', sans-serif;
         display: none;
         position: relative;
