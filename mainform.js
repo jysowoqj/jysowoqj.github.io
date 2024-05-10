@@ -64,7 +64,7 @@ serveraddress.addEventListener("click", function() {
     }
 });
 
-// HOME BUTTON : 클릭시 메인 페이지로 넘어감
+// HOME BUTTON : 클릭시 메인 페이지로 넘어감 (div=home-page)
 homebt.addEventListener("click", function() {
     home.style.display = 'block';
     rules.style.display = 'none';
@@ -72,7 +72,7 @@ homebt.addEventListener("click", function() {
     homebt.style.color = 'black';
 });
 
-// RULES BUTTON : 클릭시 규칙 페이지로 넘어감
+// RULES BUTTON : 클릭시 규칙 페이지로 넘어감 (div=rules-page)
 rulesbt.addEventListener("click", function() {
     home.style.display = 'none';
     rules.style.display = 'block';
