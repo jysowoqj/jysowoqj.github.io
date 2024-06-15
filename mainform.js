@@ -13,8 +13,7 @@ const boxElement = document.getElementById('box');
 
 // 가로 스크롤 조정
 window.onload = function () {
-        alert("ZEPICK 사이트 리모델링 진행중 입니다
-. 새로운 사이트로 찾아뷥겠습니다.")
+        alert("ZEPICK 사이트 리모델링 진행중 입니다. 새로운 사이트로 찾아뷥겠습니다.")
         window.scrollTo(125, 0);
 };
 
