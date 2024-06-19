@@ -65,11 +65,3 @@ rules_button.addEventListener("click", function(){
     $('.Home').css('display', 'none');
     $('.Rule').css('display', 'block');
 });
-
-sns_button.addEventListener("click", function(){
-    alert("Server SNS Button");
-});
-
-status_button.addEventListener("click", function(){
-    alert("Server Status Button");
-});
