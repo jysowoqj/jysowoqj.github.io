@@ -6,8 +6,6 @@ var Top_bar_Click = false
 const menu_button = document.getElementById("Menu_Button");
 const home_button = document.getElementById("Home_Button")
 const rules_button = document.getElementById("Rules_Button")
-const sns_button = document.getElementById("SNS_Button")
-const status_button = document.getElementById("Status_Button")
 
 // 탑 버튼
 const Instagram_button = document.getElementById("Instagram_Button")
