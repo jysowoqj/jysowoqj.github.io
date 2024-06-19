@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- HEAD -->
+<head>
+    <meta charset="utf-8">
+    <title>ZEPICK</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="mainform.css" />
+    <link rel="icon" href="image/낚시대.png">
+    <meta name="google-site-verification" content="ltxm1GXcQ1wgR0J_dfdEkYv1-EDaiqol7T02YmYsPQw" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
+</head>
+<!-- BODY -->
+<body>
+    <div class="Loading">
+        <div class="Loading" id="Loading_White_Box">
+            <p id="Loading_Text_D_1">
+                LOADING..
+            </p>
+            <p id="Loading_Text_D_2">
+                Loading the WebSite, Please wait a moment.                                
+                <br>
+            </p>
+            <p id="Loading_Text_D_3">
+                오랜 시간이 지나도 사이트가 로딩되지 않는다면 문의 하여 주세요.
+            </p>
+            <p id="Loading_Zepick_Text">
+                ZEPICK Minecraft
+            </p>
+            <div id="Loading_Small_Box"></div>
+        </div>
+    </div>
+    <div class="MainForm">
+        <div class="Box">
+            <button id="Menu_Button">
+                <img id="Menu_Button" src="image/Menu_Button.png">
+            </button>
+            <div class="Top_Box" id="Top_Box">
+                <img class="Top_Box" id="ZEPICK_icon" src="image/3D log.png">
+                <button class="Top_Buttons" id="Youtube_Button">Youtube</button>
+                <button class="Top_Buttons" id="Instagram_Button">Instagram</button>
+                <button class="Top_Buttons" id="Discord_Button">Discord</button>
+            </div>
+            <div class="Menu_Box" id="Menu_Box">
+                <button class="Menu_Buttons" id="Home_Button">Home</button>
+                <button class="Menu_Buttons" id="Rules_Button">Rules</button>
+                <p id="Menu_Text">ZEPICK Minecraft</p>
+            </div>
+        </div>
+        <img id="Minecraft_Backgrond_image" src="image/background.png">
+        <div class="Home">
+            <p id="Welcome_Text">
+                Welcome!
+            </p>
+            <p id="Welcome_Text_2">
+                Zero Pick Minecraft RPG Server
+                <br>
+                <br>
+                <br>
+                -------------------------------------------------
+            </p>
+            <p id="ServerVersion">Server Version : 1.18.1<br>Server Address : zepickminecraft.kro.kr</p>
+            <p id="Server_Player_count">There are <span data-playercounter-ip="zepickminecraft.kro.kr">0</span> players online on ZEPICK server.</p>
+        </div>
+        <div class="Rule">
+            <p id="Rule_Welcome_Text">
+                ZEPICK Rules-Pages
+            </p>
+            <p id="Rule_Welcome_Text_2">
+                Zero Pick Minecraft RPG Server
+                <br>
+                -------------------------------------------------
+                <br>
+                <br>
+                - ZEPICK Minecraft Server Rules -
+                <br>
+            </p>
+            <p class="Rule" id="Rule_Text">
+                ------------------------------------------------------------------------------
+                <br>
+                <br>
+                1 ▪ 인종차별, 장애, 패륜적 농담 (패드립), 욕설, 성, 정치 등의 발언을 금지합니다.
+                <br>
+                - 1-1  -> ZEPICK 은 인종과 장애, 패륜적 농담 (패드립)은 엄격히 처벌합니다.
+                <br>
+                - 1-2    --> 적발 시 Chat Ban, Time Ban, IP-ban 처리됩니다.
+                <br>
+                <br>
+                2 ▪ 허용되지 않은 프로그램과 모드는 허용하지 않습니다.
+                <br>
+                - 2-1  -> ZEPICK SERVER는 기본 런처로 실행된 마인크래프트만 이용할 수 있습니다.
+                <br>
+                - 2-2    --> 적발 시 Time Ban, IP-ban 처리됩니다.
+                <br>
+                <br>
+                3 ▪ 광고, 광고물을 허용하지 않습니다.
+                <br>
+                - 3-1  -> 광고 링크, 광고 메시지 등 광고는 허용하지 않습니다.
+                <br>
+                - 3-2    --> 적발 시 Time Ban, IP-ban 처리됩니다.
+                <br>
+                <br>
+                4 ▪ 총책임자( Head Admin )는 사유 없이 처벌 할 수 있습니다.
+                <br>
+                <br>
+                5 ▪ IP-Ban, Ban을 우회해서 접속하는 행위는 허용하지 않습니다.
+                <br>
+                - 5-1  -> 적발 시 다시 Time Ban, IP-ban 처리됩니다.
+                <br>
+                <br>
+                6 ▪ 서버의 공격을 가하는 행위 ( DDoS, Hacking ) 등의 행위를 금지합니다.
+                <br>
+                - 6-1  -> 적발 시 Time Ban, IP-ban 처리됩니다.
+                <br>
+                - 6-2    --> 금전적 피해을 볼 경우 법적인 대응이 들어갈 수 있습니다.
+                <br>
+                <br>
+                7 ▪ 오류, 버그를 악용하는 행위는 허용하지 않습니다.
+                <br>
+                - 7-1  -> 적발 시 Time Ban, IP-ban 처리됩니다.
+                <br>
+                <br>
+                8 ▪ 관리자의 권력 남용을 허용하지 않습니다.
+                <br>
+                - 8-1  -> 적발 시 해고, 강등 처리됩니다.
+                <br>
+                <br>
+                9 ▪ 서버의 건축물을 훼손, 파괴, 테러 등의 행위를 금지합니다.
+                <br>
+                - 9-1  -> 적발 시 Ban, IP-Ban 처리됩니다.
+                <br>
+                <br>
+                10 ▪ 관리자한테 거짓말을 하는 행위를 금지합니다.
+                <br>
+                - 10-1  -> 관리자한테 거짓말을 하는 행위는 또 다른 피해자를 만들어내는 행위, 처벌을 회피하려는 의도로 간주해 엄격히 처벌합니다.
+                <br>
+                - 10-2    --> 적발 시 IP-ban 처리됩니다.
+                <br>
+                <br>
+                11 ▪ 외부 프로그램 사용을 금지합니다.
+                <br>
+                - 11-1  -> 핵 프로그램, 오토마우스, 매크로, 치트엔진 등 마크 플레이에 영향을 줄 수 있는 모든 프로그램의 사용을 금지합니다.
+                <br>
+                - 11-2    --> 적발 시 IP-ban 처리됩니다.
+                <br>
+                <br>
+            </p>
+        </div>
+    </div>
+    <script src="MainForm.js"></script>
+</body>
