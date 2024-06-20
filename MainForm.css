@@ -100,18 +100,28 @@ body {
     margin-left: 40px;
     border-color: rgb(168, 168, 168,1);
     opacity: 0.8;
+    transition: all ease 0.5s;
 }
 #Youtube_Button {
     color: rgb(255, 255, 255);
     background-color: rgb(250, 23, 23)
+} #Youtube_Button:hover {
+    border-color: rgb(0, 0, 0);
+    opacity: 1;
 }
 #Discord_Button {
     color: rgb(255, 255, 255);
     background-color: rgb(65, 109, 190)
+} #Discord_Button:hover {
+    border-color: rgb(0, 0, 0);
+    opacity: 1;
 }
 #Instagram_Button {
     color: rgb(255, 255, 255);
     background-image: linear-gradient(45deg, rgb(255, 0, 221), rgb(72, 187, 253));
+} #Instagram_Button:hover {
+    border-color: rgb(0, 0, 0);
+    opacity: 1;
 }
 
 #Minecraft_Backgrond_image {
@@ -145,8 +155,10 @@ body {
 }
 
 #Menu_Box {
+    position: fixed;
     box-sizing: border-box;
-    width: 350px; height: 100%;
+    width: 20%; height: 100%;
+    top: 0%; left: 0%;
     background-color: rgba(182, 182, 182, 0.9)
 }
 
@@ -175,6 +187,7 @@ body {
     font-family: "Anton", sans-serif;
     font-weight: 300;
     font-style: normal;
+    transition: all ease 0.5s;
 }
 
 #Menu_Text {
@@ -281,5 +294,5 @@ body {
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
-    font-size: 2.5vh;
+    font-size: 2.6vh;
 }
