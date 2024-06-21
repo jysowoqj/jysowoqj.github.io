@@ -59,6 +59,9 @@ body {
     font-size: 2.2vh;
 }
 #Loading_Text_D_3 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
     position: absolute;
     box-sizing: border-box;
     color: white;
@@ -108,6 +111,7 @@ body {
 } #Youtube_Button:hover {
     border-color: rgb(0, 0, 0);
     opacity: 1;
+    width: 125px; height: 65px;
 }
 #Discord_Button {
     color: rgb(255, 255, 255);
@@ -115,6 +119,7 @@ body {
 } #Discord_Button:hover {
     border-color: rgb(0, 0, 0);
     opacity: 1;
+    width: 125px; height: 65px;
 }
 #Instagram_Button {
     color: rgb(255, 255, 255);
@@ -122,6 +127,7 @@ body {
 } #Instagram_Button:hover {
     border-color: rgb(0, 0, 0);
     opacity: 1;
+    width: 125px; height: 65px;
 }
 
 #Minecraft_Backgrond_image {
@@ -198,7 +204,8 @@ body {
 
 /* Home */
 .Home {
-    display: block;
+    display: none;
+    transition: all ease 0.5;
 }
 #Welcome_Text {
     box-sizing: border-box;
