@@ -49,8 +49,7 @@ menu_button.addEventListener("click", function(){
 Instagram_button.addEventListener("click", function(){
     alert("준비중입니다..")
     // const instagram = "";
-    // console.log("Kakaotalk Button Click")
-    // window.open(youtube, "_blank")
+    // window.open(instagram, "_blank")
 });
 
 Youtube_button.addEventListener("click", function(){
@@ -64,10 +63,14 @@ Discord_button.addEventListener("click", function(){
 });
 
 $('.Loading').show();
+$('.Home').fadeOut();
 $(window).on('load', function() {
     $('#Youtube_Button').css('top', '-80%');
     $('#Instagram_Button').css('top', '-80%');
     $('#Discord_Button').css('top', '-80%');
+    $('#Home_Button').css('color', 'rgba(100, 100, 100)')
+    $('#Welcome_Text').fadeIn(150);
+    $('.Home').fadeIn(800);
     setTimeout(function(){
         $('.Loading').fadeOut(150);
     }, 150);
@@ -83,11 +86,15 @@ $(window).on('load', function() {
 });
 
 home_button.addEventListener("click", function(){
-    $('.Home').css('display', 'block');
+    $('.Home').fadeIn(150);
     $('.Rule').css('display', 'none');
+    $('#Home_Button').css('color', 'rgba(100, 100, 100)')
+    $('#Rules_Button').css('color', 'white')
 });
 
 rules_button.addEventListener("click", function(){
     $('.Home').css('display', 'none');
-    $('.Rule').css('display', 'block');
+    $('.Rule').fadeIn(150);
+    $('#Home_Button').css('color', 'white')
+    $('#Rules_Button').css('color', 'rgba(100, 100, 100)')
 });
