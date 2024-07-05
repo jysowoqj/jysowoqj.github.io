@@ -89,6 +89,8 @@ body {
     position: fixed;
     display: block;
 }
+
+# Top Buttons 위치 % 수정
 .Top_Buttons {
     position: relative;
     box-sizing: border-box;
