@@ -47,7 +47,6 @@ menu_button.addEventListener("click", function(){
 });
 
 Instagram_button.addEventListener("click", function(){
-    alert("준비중입니다..")
     // const instagram = "";
     // window.open(instagram, "_blank")
 });
