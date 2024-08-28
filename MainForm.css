@@ -7,11 +7,11 @@ body {
     font-family: "Kanit", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-color: rgb(50, 50, 50, 0.2);
+    background-color: rgba(255, 255, 255);
 }
 ::-webkit-scrollbar { 
 	width: 0px;
-        height: 0px 
+    height: 0px 
 } 
 
 /* Loading */
@@ -112,7 +112,7 @@ body {
 } #Youtube_Button:hover {
     border-color: rgb(0, 0, 0);
     opacity: 1;
-    width: 9%; height: 65px;
+    width: 9%; height: 70%;
 }
 #Discord_Button {
     color: rgb(255, 255, 255);
@@ -120,7 +120,7 @@ body {
 } #Discord_Button:hover {
     border-color: rgb(0, 0, 0);
     opacity: 1;
-    width: 125px; height: 65px;
+    width: 9%; height: 70%;
 }
 #Instagram_Button {
     color: rgb(255, 255, 255);
@@ -128,7 +128,7 @@ body {
 } #Instagram_Button:hover {
     border-color: rgb(0, 0, 0);
     opacity: 1;
-    width: 125px; height: 65px;
+    width: 9%; height: 70%;
 }
 
 #Minecraft_Backgrond_image {
@@ -151,7 +151,9 @@ body {
 #ZEPICK_icon {
     box-sizing: border-box;
     width: 20%; height: auto;
-    left: 5.5%; top: 0.9%;
+    position: absolute;
+    left: 16%; top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .Menu_Box {
@@ -173,8 +175,9 @@ body {
     border-color: transparent;
     background-color: rgb(255, 255, 255, 0);
     box-sizing: border-box;
-    width: 3%; height: auto;
-    left: 1.7%; top: 2.5%;
+    width: 17%; height: auto;
+    transform: translate(-50%, -50%);
+    left: 10%; top: 5%;
     z-index: 3;
     display: block;
 }
@@ -226,7 +229,7 @@ body {
     top: 27%;
     text-align: center;
     font-family: "Anton", sans-serif;
-    font-weight: 300;
+    font-weight: 10%;
     font-style: normal;
     font-size: 3.5vh;
     color: white;
@@ -239,7 +242,7 @@ body {
     top: 32%;
     text-align: center;
     font-family: "Anton", sans-serif;
-    font-weight: 300;
+    font-weight: 10%;
     font-style: normal;
     font-size: 3.5vh;
     color: rgb(255, 255, 255);
@@ -252,7 +255,7 @@ body {
     top: 45%;
     text-align: center;
     font-family: "Anton", sans-serif;
-    font-weight: 300;
+    font-weight: 10%;
     font-style: normal;
     font-size: 3.5vh;
     color: rgb(255, 255, 255);
@@ -292,7 +295,7 @@ body {
 #Rule_Text {
     position: absolute;
     left: 42%;
-    top: 135%;
+    padding-top: 140%;
     box-sizing: border-box;
     width: 80%;
     transform: translate(-50%, -50%);
