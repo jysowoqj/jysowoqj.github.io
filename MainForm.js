@@ -34,9 +34,11 @@ menu_button.addEventListener("click", function(){
         Top_bar_Click = false
         $('.Menu_Box').css('left', '0px');
         setTimeout(function(){
-            $('.Menu_Box').css('left', '-400px');
-            $('.Menu_Box').css('display', 'block');
+            $('.Menu_Box').css('left', '-25%');
         }, 260);
+        setTimeout(function(){
+            $('.Menu_Box').css('display', 'none');
+        }, 700);
         setTimeout(function(){
             $('#Home_Button').css('left', '-400px')
         }, 180);
