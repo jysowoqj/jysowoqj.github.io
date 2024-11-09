@@ -1,101 +1,228 @@
-// 박스
-const Top_bar = document.getElementsByClassName("Top_Box");
-var Top_bar_Click = false
+const youtube_button = document.getElementById("youtube-button")
+const discord_button = document.getElementById("discord-button")
+const server_status_button = document.getElementById("server-status-button")
+const rule_button = document.getElementById("rule-button")
 
-// 버튼
-const menu_button = document.getElementById("Menu_Button");
-const home_button = document.getElementById("Home_Button")
-const rules_button = document.getElementById("Rules_Button")
-const sns_button = document.getElementById("SNS_Button")
-const status_button = document.getElementById("Status_Button")
+const background2 = document.getElementById("background2");
 
-// 탑 버튼
-const Instagram_button = document.getElementById("Instagram_Button")
-const Discord_button = document.getElementById("Discord_Button")
-const Youtube_button = document.getElementById("Youtube_Button")
+let lastScrollY = window.scrollY;
 
-menu_button.addEventListener("click", function(){
-    if (Top_bar_Click === false) {
-        Top_bar_Click = true
-        $('.Menu_Box').css('left', '-400px');
-        $('.Menu_Box').css('display', 'block');
-        $('#Home_Button').css('left', '-400px')
-        $('#Rules_Button').css('left', '-400px')
-        setTimeout(function(){
-            $('.Menu_Box').css('left', '0px');
-        }, 50);
-        setTimeout(function(){
-            $('#Home_Button').css('left', '8%')
-        }, 180);
-        setTimeout(function(){
-            $('#Rules_Button').css('left', '8%')
-        }, 260);
-    } else if(Top_bar_Click === true) {
-        Top_bar_Click = false
-        $('.Menu_Box').css('left', '0px');
-        setTimeout(function(){
-            $('.Menu_Box').css('left', '-25%');
-        }, 260);
-        setTimeout(function(){
-            $('.Menu_Box').css('display', 'none');
-        }, 700);
-        setTimeout(function(){
-            $('#Home_Button').css('left', '-400px')
-        }, 180);
-        setTimeout(function(){
-            $('#Rules_Button').css('left', '-400px')
-        }, 50);
-    };
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        const currentScrollY = window.scrollY;
+        
+        if (entry.isIntersecting && currentScrollY > lastScrollY) {
+            entry.target.classList.add('visible');
+        }
+        
+        lastScrollY = currentScrollY;
+    });
 });
 
-Instagram_button.addEventListener("click", function(){
-    // const instagram = "";
-    // window.open(instagram, "_blank")
+
+const boxes_left = document.querySelectorAll('.middle-text-left');
+
+boxes_left.forEach(box => {
+    observer.observe(box);
 });
 
-Youtube_button.addEventListener("click", function(){
+const boxes_right = document.querySelectorAll('.middle-text-right');
+
+boxes_right.forEach(box => {
+    observer.observe(box);
+});
+
+
+let TextShowcheck = false;
+
+background2.addEventListener("dblclick", function() {
+    const children = background2.querySelectorAll('*');
+    if (TextShowcheck === false) {
+        children.forEach(function(child) {
+            if (child.classList.contains("hidden-text")) {
+                child.classList.remove("hidden-text");
+            } else {
+                if (child.classList.contains("check-hidden")) {
+                    child.classList.add("hidden-text");
+                }
+            }
+        });
+        TextShowcheck = true;
+    } else {
+        if (TextShowcheck === true) {
+            children.forEach(function(child) {
+                if (child.classList.contains("check-hidden")) {
+                    if (!child.classList.contains("hidden-text")) {
+                        child.classList.add("hidden-text");
+                    } else {
+                        child.classList.remove("hidden-text");
+                    }
+                }
+            });
+            TextShowcheck = false;
+        }
+    }
+});
+
+rule_button.addEventListener("click", function(){
+    alert("규칙 페이지는 현재 준비중입니다! 디스코드 Rules 페이지를 확인해주세요.")
+});
+
+youtube_button.addEventListener("click", function() {
     const youtube = "https://www.youtube.com/channel/UClDtbMfGtunkPEuXJBs5_Cw";
     window.open(youtube, "_blank")
 });
 
-Discord_button.addEventListener("click", function(){
+discord_button.addEventListener("click", function(){
     const discord = "https://discord.gg/cwdWsDbere";
     window.open(discord, "_blank")
 });
 
-$('.Loading').show();
-$('.Home').fadeOut();
-$(window).on('load', function() {
-    $('#Youtube_Button').css('top', '-80%');
-    $('#Instagram_Button').css('top', '-80%');
-    $('#Discord_Button').css('top', '-80%');
-    $('#Home_Button').css('color', 'rgba(100, 100, 100)')
-    $('#Welcome_Text').fadeIn(150);
-    $('.Home').fadeIn(800);
-    setTimeout(function(){
-        $('.Loading').fadeOut(150);
-    }, 150);
-    setTimeout(function(){
-        $('#Youtube_Button').css('top', '50%');
-    }, 200);
-    setTimeout(function(){
-        $('#Instagram_Button').css('top', '50%');
-    }, 300);
-    setTimeout(function(){
-        $('#Discord_Button').css('top', '50%');
-    }, 400);
+server_status_button.addEventListener("click", function(){
+    const server_status = "https://stats.uptimerobot.com/QYU8QSbP3P/797573602";
+    window.open(server_status, "_blank")
 });
 
-home_button.addEventListener("click", function(){
-    $('.Home').fadeIn(150);
-    $('.Rule').css('display', 'none');
-    $('#Home_Button').css('color', 'rgba(100, 100, 100)')
-    $('#Rules_Button').css('color', 'white')
+
+jQuery(document).ready(function() {
+    window.scrollTo(0, 0);
+    togglechangetext();
 });
 
-rules_button.addEventListener("click", function(){
-    $('.Home').css('display', 'none');
-    $('.Rule').fadeIn(150);
-    $('#Home_Button').css('color', 'white')
-    $('#Rules_Button').css('color', 'rgba(100, 100, 100)')
-});
+function togglechangetext() {
+    setTimeout(function(){
+        setTimeout(function() {
+            document.getElementById("change").innerHTML = "유저를 위 서버";
+        }, 100);
+        setTimeout(function() {
+            document.getElementById("change").innerHTML = "유저를  서버";
+        }, 200);
+        setTimeout(function() {
+            document.getElementById("change").innerHTML = "유저를 존 서버";
+        }, 400);
+        setTimeout(function() {
+            document.getElementById("change").innerHTML = "유저를 존중 서버";
+        }, 500);
+        setTimeout(function() {
+            document.getElementById("change").innerHTML = "유저를 존중하 서버";
+        }, 600);
+        setTimeout(function() {
+            document.getElementById("change").innerHTML = "유저를 존중하는 서버";
+        }, 700);
+        setTimeout(function(){
+            setTimeout(function() {
+                document.getElementById("change").innerHTML = "유저를 존중하 서버";
+            }, 100);
+            setTimeout(function() {
+                document.getElementById("change").innerHTML = "유저를 존중 서버";
+            }, 200);
+            setTimeout(function() {
+                document.getElementById("change").innerHTML = "유저를 존 서버";
+            }, 300);
+            setTimeout(function() {
+                document.getElementById("change").innerHTML = "유저를  서버";
+            }, 400);
+            setTimeout(function() {
+                document.getElementById("change").innerHTML = "유저를 즐 서버";
+            }, 500);
+            setTimeout(function() {
+                document.getElementById("change").innerHTML = "유저를 즐겁 서버";
+            }, 600);
+            setTimeout(function() {
+                document.getElementById("change").innerHTML = "유저를 즐겁게 서버";
+            }, 700);
+            setTimeout(function() {
+                document.getElementById("change").innerHTML = "유저를 즐겁게 하 서버";
+            }, 800);
+            setTimeout(function() {
+                document.getElementById("change").innerHTML = "유저를 즐겁게 하는 서버";
+            }, 900);
+            setTimeout(function(){
+                setTimeout(function() {
+                    document.getElementById("change").innerHTML = "유저를 즐겁게 하는 서버";
+                }, 100);
+                setTimeout(function() {
+                    document.getElementById("change").innerHTML = "유저를 즐겁게 하 서버";
+                }, 200);
+                setTimeout(function() {
+                    document.getElementById("change").innerHTML = "유저를 즐겁게  서버";
+                }, 300);
+                setTimeout(function() {
+                    document.getElementById("change").innerHTML = "유저를 즐겁 서버";
+                }, 400);
+                setTimeout(function() {
+                    document.getElementById("change").innerHTML = "유저를 즐 서버";
+                }, 500);
+                setTimeout(function() {
+                    document.getElementById("change").innerHTML = "유저를  서버";
+                }, 600);
+                setTimeout(function() {
+                    document.getElementById("change").innerHTML = "유저  서버";
+                }, 700);
+                setTimeout(function() {
+                    document.getElementById("change").innerHTML = "유저와  서버";
+                }, 800);
+                setTimeout(function() {
+                    document.getElementById("change").innerHTML = "유저와 언 서버";
+                }, 900);
+                setTimeout(function() {
+                    document.getElementById("change").innerHTML = "유저와 언제 서버";
+                }, 1000);
+                setTimeout(function() {
+                    document.getElementById("change").innerHTML = "유저와 언제든 서버";
+                }, 1100);
+                setTimeout(function() {
+                    document.getElementById("change").innerHTML = "유저와 언제든 함 서버";
+                }, 1200);
+                setTimeout(function() {
+                    document.getElementById("change").innerHTML = "유저와 언제든 함께 서버";
+                }, 1300);
+                setTimeout(function() {
+                    document.getElementById("change").innerHTML = "유저와 언제든 함께하 서버";
+                }, 1400);
+                setTimeout(function() {
+                    document.getElementById("change").innerHTML = "유저와 언제든 함께하는 서버";
+                }, 1500);
+                setTimeout(function(){
+                    setTimeout(function() {
+                        document.getElementById("change").innerHTML = "유저와 언제든 함께하는 서버";
+                    }, 100);
+                    setTimeout(function() {
+                        document.getElementById("change").innerHTML = "유저와 언제든 함께하 서버";
+                    }, 200);
+                    setTimeout(function() {
+                        document.getElementById("change").innerHTML = "유저와 언제든 함께 서버";
+                    }, 300);
+                    setTimeout(function() {
+                        document.getElementById("change").innerHTML = "유저와 언제든 함 서버";
+                    }, 400);
+                    setTimeout(function() {
+                        document.getElementById("change").innerHTML = "유저와 언제든  서버";
+                    }, 500);
+                    setTimeout(function() {
+                        document.getElementById("change").innerHTML = "유저와 언제 서버";
+                    }, 600);
+                    setTimeout(function() {
+                        document.getElementById("change").innerHTML = "유저와 언 서버";
+                    }, 700);
+                    setTimeout(function() {
+                        document.getElementById("change").innerHTML = "유저와  서버";
+                    }, 800);
+                    setTimeout(function() {
+                        document.getElementById("change").innerHTML = "유저 서버";
+                    }, 900);
+                    setTimeout(function() {
+                        document.getElementById("change").innerHTML = "유저를  서버";
+                    }, 1000);
+                    setTimeout(function() {
+                        document.getElementById("change").innerHTML = "유저를 위 서버";
+                    }, 1100);
+                    setTimeout(function() {
+                        document.getElementById("change").innerHTML = "유저를 위한 서버";
+                    }, 1200);
+                    togglechangetext();
+                }, 4000);
+            }, 4000);
+        }, 4000);
+    }, 3000);
+}
