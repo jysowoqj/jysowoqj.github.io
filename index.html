@@ -16,12 +16,12 @@
             font-family: 'Pretendard-Regular';
             src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
             font-style: normal;
-            -ms-overflow-style: none;
-            scrollbar-width: none;
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
             background-color: rgb(250, 250, 250);
         }
         body::-webkit-scrollbar {
-            display: none;
+            display: none; /* Chrome, Safari, Opera */
         }
         header {
             display: flex;
@@ -104,6 +104,7 @@
             background-size: cover;
             background-position: center;
             background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(image/background1.png);
+            /* animation: backgroundChange 20s infinite; */
             transition: background-image 1s ease-in-out, opacity 1s ease-in-out;
         }
 
@@ -115,13 +116,13 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(image/background1.png);
-            filter: blur(10px);
-            z-index: -1;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(image/background1.png); /* 배경 직접 설정 */
+            filter: blur(10px); /* 배경에만 블러 효과 */
+            z-index: -1; /* 텍스트보다 뒤에 배경이 보이도록 설정 */
         }
 
         .hero p {
-            margin-bottom: -18px;
+            margin-bottom: -18px; /* 문장과 제목 사이 간격 줄이기 */
             font-size: 1.2rem;
             font-family: 'GmarketSansMedium';
             src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
@@ -132,7 +133,7 @@
 
         .hero h1 {
             font-size: 2rem;
-            margin-bottom: 20px;
+            margin-bottom: 20px; /* 버튼과의 간격 늘리기 */
             font-family: 'GmarketSansMedium';
             src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
             font-weight: 900;
@@ -149,7 +150,7 @@
             font-size: 12px;
             cursor: pointer;
             transition: background 0.3s, transform 0.2s;
-            margin-top: 24px;
+            margin-top: 24px; /* 버튼 위쪽 간격 늘리기 */
             font-family: 'Wanted Sans', sans-serif;
             font-weight: 500;
             z-index: 1;
@@ -371,8 +372,8 @@
 
             .hero p {
                 margin-bottom: -10px;
-                font-size: 0.9rem;
-                overflow-wrap: break-word;
+                font-size: 0.9rem; /* Changed to rem for better scalability */
+                overflow-wrap: break-word; /* Prevents long words from overflowing */
             }
 
             .service-container {
@@ -390,10 +391,10 @@
             }
 
             header {
-                flex-direction: column;
-                align-items: center;
+                flex-direction: column; /* Stack logo and nav vertically */
+                align-items: center; /* Center horizontally */
                 padding: 10px;
-                width: 90%;
+                width: 90%; /* Ensure header takes full width */
             }
 
             .logo {
@@ -402,11 +403,11 @@
             }
 
             nav ul {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: center;
-                gap: 20px;
+                display: flex; /* Enable flexbox */
+                flex-direction: row; /* Arrange items horizontally */
+                align-items: center; /* Vertically align items */
+                justify-content: center; /* Horizontally center the links */
+                gap: 20px; /* Space between links */
                 margin-top: 0px;
                 padding: 0;
                 list-style: none;
@@ -414,12 +415,12 @@
 
             nav li {
                 text-align: center;
-                width: auto;
+                width: auto; /* Key change: Let list items take their content width */
                 overflow-wrap: break-word;
             }
 
             nav a {
-                display: block;
+                display: block; /* Makes the <a> fill the <li> */
                 padding: 10px;
                 text-decoration: none;
                 color: inherit;
@@ -509,9 +510,9 @@
             </div>
         </div>
     </section>
-    <section class="advantage hidden" style="margin-top: 100px;">
+    <section class="advantage hidden" style="padding-top: 200px; padding-bottom: 200px; background-color: rgb(20, 19, 19);">
         <div class="advantage-container">
-            <div style="margin-right: 15px; margin-left: 15px;">
+            <div style="margin-right: 15px; margin-left: 15px; color: white;">
                 <h2 class="animated-text">'다양한 IT 기술 지원<br>맞춤형 마인크래프트 서버 개발 지원 서비스<br>Creative Lab Studio!'</h2>
                 <p>사업을 시작했지만, IT 기술이 부족하신가요? & 마인크래프트 서버 운영, 처음이라 어려우신가요?</p>
                 <p>저희 서비스를 소개합니다!</p>
